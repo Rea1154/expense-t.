@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Expense tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Expense tracker</h1>
+      <p>New Item</p>
+
+      <div class="input-container">
+        <form action="">
+          <div>
+            <label for="name">Name:</label>
+            <input
+              class="input"
+              id="name"
+              type="text"
+              placeholder="Pet food"
+              maxlength="20"
+            />
+          </div>
+
+          <div>
+            <label for="date">Date:</label>
+            <input class="input" id="date" type="date" />
+          </div>
+
+          <div>
+            <label for="price">Price:</label>
+            <input class="input" id="price" type="number" placeholder="9" />
+          </div>
+
+          <div>
+            <label for="currency">Currency:</label>
+            <select class="currency" name="currency" id="currency">
+              <option value="Ft">HUF</option>
+              <option value="€">EUR</option>
+              <option value="$">USD</option>
+              <option value="£">GBP</option>
+            </select>
+          </div>
+
+          <div class="btn-div">
+            <button class="add-btn">+</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+
+          <tbody class="tbody">
+            <!--
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <button class='delete-btn'></button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <button class="delete-all-btn">Delete All</button>
+    </header>
+
+    <script src="app.js"></script>
+    <script src="valami.js"></script>
+  </body>
+</html>

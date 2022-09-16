@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #fff;
+  width: 100%;
+  padding: 5rem;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.4),
+      rgba(34, 34, 34, 0.4)
+    ),
+    url(img/hatter1.jpg);
+  background-size: cover;
+}
+
+.input-container {
+  margin-right: 4%;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  padding-bottom: 2rem;
+  font-weight: 400;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+form {
+  position: relative;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+form div {
+  margin-bottom: 3rem;
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+input {
+  width: 20rem;
+  border: 1px solid lightblue;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  height: 3rem;
+}
+
+.currency {
+  border: 1px solid lightblue;
+  height: 3rem;
+}
+
+input :focus-visible {
+  outline: lightblue;
+}
+
+.btn-div {
+  width: 67%;
+}
+
+.add-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: lightblue;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 4rem;
+  display: inline-block;
+  height: 4rem;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  border: 2px solid lightblue;
+  background-color: #fff;
+}
+
+.add-btn-close {
+  pointer-events: none;
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  width: 45%;
+}
+
+th {
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 251, 251, 0.4);
+}
+
+td {
+  font-size: 2rem;
+  height: 4rem;
+  border: 1px solid #fff;
+}
+
+.delete-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: lightblue;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.delete-all-btn {
+  border-radius: 5px;
+  border: 2px solid lightblue;
+  padding: 0.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: none;
+}
+
+.fade-out {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+/*  MEDIA  */
+@media (max-width: 69em) {
+  .table {
+    width: 60%;
+  }
+}
+
+@media (max-width: 50em) {
+  .table {
+    width: 80%;
+  }
+}
+
+@media (max-width: 44em) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 35em) {
+  body {
+    padding: 5rem 1rem 1rem 1rem;
+  }
+
+  .table {
+    width: 90%;
+  }
+
+  .add-btn {
+    position: relative;
+    top: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  td {
+    padding: 1rem;
+  }
+
+  .delete-btn {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  html {
+    font-size: 55%;
+  }
+  form div {
+    width: 80%;
+  }
+  .btn-div {
+    width: 80%;
+  }
+
+  .table {
+    width: 95%;
+  }
+}
+
+@media (max-width: 23em) {
+  form div {
+    width: 78%;
+  }
+}
